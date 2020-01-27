@@ -7,4 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nav.classList.add('nav-hide');
     }
   });
+
+  const commentBox = document.getElementById('addComment');
+  autosize(commentBox);
 });

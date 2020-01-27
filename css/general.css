@@ -8,3 +8,8 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+.section-container {
+  margin: 0 auto;
+  padding-top: 100px;
+}
