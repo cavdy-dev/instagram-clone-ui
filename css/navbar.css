@@ -1,0 +1,37 @@
+.nav {
+  height: 75px !important;
+  box-shadow: 0px 0px 2px #00000063;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.logo-link {
+  display: flex;
+}
+
+.divider {
+  border: 0.5px solid black;
+  margin: 0 18px;
+}
+
+.search {
+  width: 215px;
+  height: 28px;
+  background-color: #fafafa;
+  outline: none !important;
+  border: solid 1px #dbdbdb;
+  border-radius: 3px;
+  color: #262626;
+  text-align: center;
+}
+
+.search:focus {
+  padding: 3px 10px 3px 26px;
+  text-align: left;
+}
+
+.search::placeholder {
+  font-weight: 400;
+}
