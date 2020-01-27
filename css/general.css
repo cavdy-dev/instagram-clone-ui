@@ -1,15 +1,43 @@
+:root {
+  --card-bg-color: white;
+}
+
 body {
   background-color: #fafafa;
 }
 
-.max-width {
+.container {
   max-width: 935px;
   width: 100%;
+  padding: 0;
+}
+
+.container-top {
+  padding-top: 100px;
+}
+
+.content-container {
+  padding-top: 40px;
   display: flex;
   justify-content: space-between;
 }
 
-.section-container {
-  margin: 0 auto;
-  padding-top: 100px;
+@media (max-width: 1000px) {
+  .content-container {
+    padding-top: 20px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --card-bg-color: #fafafa;
+  }
+  .container-top {
+    padding-top: 75px;
+  }
+
+  .content-container {
+    padding-top: 0;
+  }
 }
