@@ -3,7 +3,8 @@ body {
 }
 
 .max-width {
-  width: 935px;
+  max-width: 935px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
