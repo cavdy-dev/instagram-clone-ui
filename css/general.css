@@ -2,6 +2,17 @@
   --card-bg-color: white;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+html,
+body {
+  height: 100%;
+  scrollbar-color: transparent;
+}
+
 body {
   background-color: #fafafa;
 }
@@ -29,12 +40,14 @@ body {
   }
 }
 
+@media (max-width: 735px) {
+  .container-top {
+    padding-top: 75px;
+  }
+}
 @media (max-width: 640px) {
   :root {
     --card-bg-color: #fafafa;
-  }
-  .container-top {
-    padding-top: 75px;
   }
 
   .content-container {
