@@ -33,22 +33,6 @@ body {
   justify-content: space-between;
 }
 
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  flex-direction: column;
-}
-
-.footer {
-  margin-bottom: 30px;
-}
-
-.footer a {
-  text-decoration: none;
-}
-
 @media (max-width: 1000px) {
   .content-container {
     padding-top: 20px;
@@ -56,12 +40,14 @@ body {
   }
 }
 
+@media (max-width: 735px) {
+  .container-top {
+    padding-top: 75px;
+  }
+}
 @media (max-width: 640px) {
   :root {
     --card-bg-color: #fafafa;
-  }
-  .container-top {
-    padding-top: 75px;
   }
 
   .content-container {

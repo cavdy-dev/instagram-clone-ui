@@ -4,8 +4,8 @@
   border-radius: 2px;
   display: flex;
   align-items: center;
-  margin: 0 auto;
   margin-bottom: 50px;
+  margin: 0 20px;
 }
 
 .comments-content-wrapper {
@@ -24,14 +24,20 @@
   width: 335px;
   background-color: var(--card-bg-color);
   height: 100%;
+  position: relative;
 }
 
-.comments-header {
+.comments-header,
+.comments-mobile-header {
   height: 72px;
   border-bottom: 0.5px solid #00000063;
   display: flex;
   align-items: center;
   padding: 0 20px;
+}
+
+.comments-mobile-header {
+  display: none;
 }
 
 .verified {
@@ -97,4 +103,37 @@
   margin-top: 10px;
   font-size: 12px;
   display: block;
+}
+
+@media (max-width: 735px) {
+  .comments-section {
+    align-items: initial;
+    flex-direction: column;
+    margin: 0;
+    height: auto;
+  }
+
+  .comments-content-wrapper {
+    width: 100%;
+  }
+
+  .comments-header {
+    display: none;
+  }
+
+  .comments-mobile-header {
+    display: flex;
+  }
+
+  .comments-wrapper {
+    width: 100%;
+  }
+
+  .post-comment-description {
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+  }
+
+  .comments-content {
+    max-height: 720px;
+  }
 }
