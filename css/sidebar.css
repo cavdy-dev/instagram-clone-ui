@@ -147,3 +147,9 @@
     display: flex;
   }
 }
+
+@media (max-width: 640px) {
+  .stories-mobile {
+  box-shadow: none;
+}
+}

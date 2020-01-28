@@ -9,5 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const commentBox = document.getElementById('addComment');
-  autosize(commentBox);
+  commentBox.addEventListener('input', e => {
+    if (e.target.scrollHeight <= 76) {
+      commentBox.style.overflow = 'auto';
+      autosize(commentBox);
+    }
+  });
 });
