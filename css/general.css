@@ -1,5 +1,8 @@
 :root {
   --card-bg-color: white;
+  --text-color: #262626;
+  --text-color-grey: #999999;
+  --bx-shadow-color: #00000063;
 }
 
 ::-webkit-scrollbar {
