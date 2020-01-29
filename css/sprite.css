@@ -1,0 +1,11 @@
+.instaIcons {
+  display: inline-block;
+  transition: all 0.5s;
+  image-rendering: pixelated;
+}
+
+.spriteSettings {
+  height: 24px;
+  width: 24px;
+  background-image: url('../assets/img/settings.png');
+}
