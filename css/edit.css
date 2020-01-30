@@ -33,6 +33,7 @@
   font-weight: 700;
 }
 
+.edit-profile-section,
 .edit-section {
   display: flex;
   align-items: center;
@@ -99,4 +100,42 @@
   color: white;
   font-weight: 700;
   font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .menus-wrapper {
+    display: none;
+  }
+
+  .edit-section {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .edit-wrapper {
+    height: auto;
+  }
+
+  .edit-width {
+    width: auto;
+    margin-right: 32px;
+    padding: 0;
+    text-align: left;
+  }
+
+  .edit-form-wrapper {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 735px) {
+  .edit-wrapper {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .form-input {
+    width: 250px;
+  }
 }
