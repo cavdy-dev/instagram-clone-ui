@@ -41,10 +41,15 @@
   border: 1px solid #dbdbdb;
   color: var(--text-color);
   height: 30px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 500;
   cursor: pointer;
   margin-right: 10px;
   border-radius: 3px;
+  text-decoration: none !important;
 }
 
 .profile__profile-follower-wrapper {

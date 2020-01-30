@@ -1,0 +1,141 @@
+.edit-wrapper {
+  height: 644px;
+  width: 100%;
+  box-shadow: 0px 0px 2px var(--bx-shadow-color);
+  border-radius: 2px;
+  display: flex;
+  background-color: white;
+}
+
+.menus-wrapper {
+  width: 237px;
+  border-right: 0.5px solid var(--bx-shadow-color);
+}
+
+.menus {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+  height: 52px;
+  padding-left: 30px;
+  text-decoration: none !important;
+  color: var(--text-color);
+}
+
+.menu-link.active {
+  border-left: 2px solid var(--text-color);
+  font-weight: 700;
+}
+
+.edit-profile-section,
+.edit-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.edit-form-wrapper {
+  padding: 32px 0;
+}
+
+.edit-width {
+  width: 194px;
+  padding: 0 32px;
+  text-align: right;
+}
+
+.edit-profile-picture {
+  width: 38px;
+  height: 38px;
+  border-radius: 100%;
+  image-rendering: pixelated;
+}
+
+.edit-profile-username {
+  font-size: 20px;
+  line-height: 22px;
+  margin-bottom: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-color);
+}
+.edit-profile-btn {
+  color: #3897f0;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.form-label {
+  color: var(--text-color);
+  font-weight: 700;
+  margin: 0;
+}
+
+.form-input {
+  width: 345px;
+  background: transparent;
+  border: 1px solid #efefef;
+  border-radius: 3px;
+  color: var(--text-color);
+  font-size: 16px;
+  min-height: 32px;
+  height: 100%;
+  padding: 0 10px;
+  outline: none !important;
+}
+
+.form-btn {
+  border: 1px solid transparent;
+  background-color: #3897f0;
+  border-radius: 4px;
+  width: 100%;
+  height: 30px;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .menus-wrapper {
+    display: none;
+  }
+
+  .edit-section {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .edit-wrapper {
+    height: auto;
+  }
+
+  .edit-width {
+    width: auto;
+    margin-right: 32px;
+    padding: 0;
+    text-align: left;
+  }
+
+  .edit-form-wrapper {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 735px) {
+  .edit-wrapper {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .form-input {
+    width: 250px;
+  }
+}
