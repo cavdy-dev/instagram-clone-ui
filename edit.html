@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/userscontent.css" />
     <link rel="stylesheet" href="./css/comments.css" />
     <link rel="stylesheet" href="./css/profile.css" />
+    <link rel="stylesheet" href="./css/edit.css" />
   </head>
   <body>
     <!--Navbar-->
@@ -93,37 +94,121 @@
 
     <!--Section Content-->
     <section class="container container-top">
-      <header class="profile-wrapper">
-        <div class="profile__profile-image-wrapper">
-          <img class="profile__profile-image" src="./assets/img/pretty.jpeg" />
+      <div class="edit-wrapper">
+        <div class="menus-wrapper">
+          <ul class="menus">
+            <li class="menu-item">
+              <a href="#" class="menu-link active">Edit Profile</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Change password</a>
+            </li>
+          </ul>
         </div>
-
-        <div class="profile__profile-details-wrapper">
-          <div class="profile__profile-details">
-            <h1 class="profile__profile-username">darklordcodes</h1>
-            <a href="./edit.html" class="profile__profile-edit">Edit Profile</a>
-            <span class="instaIcons spriteSettings"></span>
+        <div class="edit-form-wrapper">
+          <div class="edit-section">
+            <div class="edit-width">
+              <img
+                class="edit-profile-picture"
+                src="./assets/img/pretty.jpeg"
+              />
+            </div>
+            <div>
+              <h1 class="edit-profile-username">darklordcodes</h1>
+              <span class="edit-profile-btn">Change Profile Picture</span>
+            </div>
           </div>
-          <div class="profile__profile-follower-wrapper">
-            <span class="profile__profile-follow"
-              ><span class="profile-count">3</span> posts</span
-            >
-            <a class="profile__profile-follow" href="#"
-              ><span class="profile-count">67</span> followers</a
-            >
-            <a class="profile__profile-follow" href="#"
-              ><span class="profile-count">67</span> following</a
-            >
-          </div>
-          <div class="profile__profile-desc-wrapper">
-            <h1 class="profile__profile-name">Cavdy</h1>
-            <span class="profile__profile-desc"
-              >Lorem ipsum dolor sit, amet consectetur</span
-            >
-            <a class="profile__profile-url" href="#">github.com/cavdy</a>
-          </div>
+          <form>
+            <div class="edit-section">
+              <div class="edit-width">
+                <label for="name" class="form-label">Name</label>
+              </div>
+              <div>
+                <input class="form-input" type="text" name="name" id="name" />
+              </div>
+            </div>
+            <div class="edit-section">
+              <div class="edit-width">
+                <label for="username" class="form-label">Username</label>
+              </div>
+              <div>
+                <input
+                  class="form-input"
+                  type="text"
+                  name="username"
+                  id="username"
+                />
+              </div>
+            </div>
+            <div class="edit-section">
+              <div class="edit-width">
+                <label for="website" class="form-label">Website</label>
+              </div>
+              <div>
+                <input
+                  class="form-input"
+                  type="text"
+                  name="website"
+                  id="website"
+                />
+              </div>
+            </div>
+            <div class="edit-section">
+              <div class="edit-width">
+                <label for="email" class="form-label">Email</label>
+              </div>
+              <div>
+                <input
+                  class="form-input"
+                  type="email"
+                  name="email"
+                  id="email"
+                />
+              </div>
+            </div>
+            <div class="edit-section">
+              <div class="edit-width">
+                <label for="bio" class="form-label">Bio</label>
+              </div>
+              <div>
+                <textarea
+                  class="form-input"
+                  name="bio"
+                  id="bio"
+                  cols="2"
+                  rows="3"
+                ></textarea>
+              </div>
+            </div>
+            <div class="edit-section">
+              <div class="edit-width">
+                <label for="phone" class="form-label">Phone Number</label>
+              </div>
+              <div>
+                <input class="form-input" type="tel" name="phone" id="phone" />
+              </div>
+            </div>
+            <div class="edit-section">
+              <div class="edit-width">
+                <label for="gender" class="form-label">Gender</label>
+              </div>
+              <div>
+                <select class="form-input">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="edit-section">
+              <div class="edit-width"></div>
+              <div>
+                <button class="form-btn">Submit</button>
+              </div>
+            </div>
+          </form>
         </div>
-      </header>
+      </div>
     </section>
 
     <!--Javascript-->
